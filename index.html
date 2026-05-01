@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Lumière — An Aesthetic Café</title>
+<meta name="description" content="Lumière is a warm, candlelit café serving slow-roasted coffee, fresh pastries, and quiet afternoons."/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="#" class="brand">Lumière<span>·</span>Café</a>
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#story">Story</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#visit">Visit</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header class="hero parallax" style="background-image:url('images/hero.jpg')">
+  <div class="hero-overlay"></div>
+  <div class="hero-content reveal">
+    <p class="eyebrow">— est. 2014 · slow coffee ritual —</p>
+    <h1>Where mornings<br/><em>linger.</em></h1>
+    <p class="lede">A candlelit corner for slow-roasted coffee, hand-folded pastries, and the kind of conversation that forgets the time.</p>
+    <a href="#menu" class="btn">Explore the Menu</a>
+  </div>
+  <div class="scroll-cue">scroll ↓</div>
+</header>
+
+<section id="story" class="section">
+  <div class="grid">
+    <div class="reveal">
+      <p class="eyebrow">our story</p>
+      <h2>A small room, a slow ritual.</h2>
+      <p>We opened Lumière with one espresso machine, three tables, and a stubborn belief that coffee tastes better when no one is in a hurry. A decade later, the room is still small — and the ritual still slow.</p>
+      <p>Beans are roasted in-house every Tuesday. Pastries arrive warm at six. Everything else is made the moment you order it.</p>
+    </div>
+    <div class="image-frame reveal">
+      <img src="images/barista.jpg" alt="Barista pouring milk into espresso under warm pendant lights" loading="lazy"/>
+    </div>
+  </div>
+</section>
+
+<section class="parallax break" style="background-image:url('images/beans.jpg')">
+  <blockquote class="reveal">
+    <p>"Coffee is a language in itself."</p>
+    <cite>— Jackie Chan</cite>
+  </blockquote>
+</section>
+
+<section id="menu" class="section">
+  <div class="section-head reveal">
+    <p class="eyebrow">the menu</p>
+    <h2>Carefully short.<br/>Quietly perfect.</h2>
+  </div>
+  <div class="menu-grid">
+    <article class="menu-card reveal"><h3>Espresso</h3><p>House blend, single origin Ethiopia. Notes of cocoa &amp; citrus zest.</p><span class="price">$3.50</span></article>
+    <article class="menu-card reveal"><h3>Honey Latte</h3><p>Double shot, steamed oat milk, raw wildflower honey.</p><span class="price">$5.50</span></article>
+    <article class="menu-card reveal"><h3>Pour Over</h3><p>Rotating single origin. Patient, bright, served black.</p><span class="price">$6.00</span></article>
+    <article class="menu-card reveal"><h3>Butter Croissant</h3><p>72-hour cold ferment. French butter. Folded by hand at dawn.</p><span class="price">$4.25</span></article>
+    <article class="menu-card reveal"><h3>Matcha Cloud</h3><p>Ceremonial-grade matcha, vanilla bean foam, cold milk.</p><span class="price">$6.50</span></article>
+    <article class="menu-card reveal"><h3>Cardamom Bun</h3><p>Warm spice, brown butter glaze. Limited daily bake.</p><span class="price">$4.75</span></article>
+  </div>
+</section>
+
+<section class="parallax break tall" style="background-image:url('images/latte.jpg')">
+  <div class="reveal center">
+    <p class="eyebrow light">— a pause —</p>
+    <h2 class="light">Stay a while.</h2>
+  </div>
+</section>
+
+<section id="visit" class="section">
+  <div class="grid">
+    <div class="reveal">
+      <p class="eyebrow">visit us</p>
+      <h2>Find the warm window.</h2>
+      <p class="info"><strong>14 Rue de la Lumière</strong><br/>Le Marais, Paris 75004</p>
+      <p class="info"><strong>Hours</strong><br/>Tue – Sun · 7:30 — 18:00<br/>Closed Mondays</p>
+      <p class="info"><strong>Say hello</strong><br/><a class="link" href="mailto:theunnamedproject@protonmail.me">theunnamedproject@protonmail.me</a><br/>+33 1 23 45 67 89</p>
+    </div>
+    <div class="image-frame reveal">
+      <img src="images/latte.jpg" alt="Top-down latte with art and golden croissant" loading="lazy"/>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section contact-section">
+  <div class="section-head reveal">
+    <p class="eyebrow">get in touch</p>
+    <h2>Drop us a line.</h2>
+    <p class="contact-sub">Reservations, private events, or just to say bonjour. Submitting opens your email app.</p>
+  </div>
+  <form id="contact-form" class="contact-form reveal" novalidate>
+    <div class="field"><label for="cf-name">Your name</label><input id="cf-name" name="name" type="text" required autocomplete="name"/></div>
+    <div class="field"><label for="cf-email">Your email</label><input id="cf-email" name="email" type="email" required autocomplete="email"/></div>
+    <div class="field"><label for="cf-subject">Subject</label><input id="cf-subject" name="subject" type="text" required/></div>
+    <div class="field"><label for="cf-message">Message</label><textarea id="cf-message" name="message" rows="5" required></textarea></div>
+    <button type="submit" class="btn btn-dark">Send via Email</button>
+    <p id="cf-status" class="cf-status" role="status" aria-live="polite"></p>
+  </form>
+</section>
+
+<footer><p>© 2026 Lumière Café · Made with patience &amp; espresso.</p></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
